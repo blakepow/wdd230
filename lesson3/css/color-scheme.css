@@ -1,0 +1,44 @@
+@import url('./style.css');
+
+main {
+    background-color: var(--tertiary-color);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+main > p {
+    width: calc(100% - 5em);
+    margin: 1em auto;
+}
+
+main > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: min-content;
+    gap: 1em;
+}
+article {
+    aspect-ratio: 1/1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article:nth-child(1) {
+    background-color: var(--primary-color);
+    border: .5px solid black;
+}
+article:nth-child(2) {
+    background-color: var(--secondary-color);
+    border: .5px solid black;
+}
+article:nth-child(3) {
+    background-color: var(--tertiary-color);
+    border: .5px solid black;
+}
+article:nth-child(4) {
+    background-color: var(--body-color);
+    border: .5px solid black;
+}
