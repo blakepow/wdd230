@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    --primary-color: #3A606E;
+    --secondary-color: #607B7D;
+    --tertiary-color: #828E82;
+    --body-color: #E0E0E0;
+}
+
+body {
+    margin: 0 auto;
+
+    min-width: 100vw;
+
+    font-family: 'Ubuntu', sans-serif;
+
+    background-color: var(--body-color);
+}
+
+header, footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+}
+
+header > section{
+    margin: 0 auto;
+
+    height: 10rem;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+
+    font-size: 1.2em;
+}
+
+header > section > img {
+    max-height: 10rem;
+}
+
+header, main, section, footer {
+    margin: .5em 0;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    width: 100%;
+}
+
+nav > ul {
+    list-style: none;
+    height: 2em;
+    margin: 0 auto;
+    max-width: 1500px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+li {
+    height: 70%;
+    width: 20%;
+    border-radius: 5px;
+    text-align: center;
+}
+li:hover {
+    background-color: #AAAE8E;
+    cursor: pointer;
+}
+
+li > a {
+    font-size: 1.1em;
+    height: inherit;
+    color: black;
+    display: block;
+}
+
+li > a:active{
+    background-color: red;
+}
+
+
+footer {
+    bottom: 0;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
