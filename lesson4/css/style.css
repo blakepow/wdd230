@@ -88,7 +88,8 @@ footer {
     bottom: 0;
     min-height: 5rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: .5em;
 }
