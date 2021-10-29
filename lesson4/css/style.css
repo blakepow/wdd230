@@ -29,7 +29,6 @@ header, footer {
 header > section{
     margin: 0 auto;
 
-    height: 10rem;
     max-width: 1500px;
     display: flex;
     align-items: center;
