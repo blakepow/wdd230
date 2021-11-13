@@ -29,7 +29,6 @@ header, footer {
 header > section{
     margin: 0 auto;
 
-    height: 10rem;
     max-width: 1500px;
     display: flex;
     align-items: center;
@@ -66,12 +65,11 @@ nav > ul {
 }
 
 li {
-    height: 70%;
-    width: 20%;
     border-radius: 5px;
     text-align: center;
+    overflow: hidden;
 }
-li:hover {
+li:hover, li a.active {
     background-color: #AAAE8E;
     cursor: pointer;
 }
@@ -81,19 +79,107 @@ li > a {
     height: inherit;
     color: black;
     display: block;
+    padding: .2em 1em;
 }
 
-li.active{
+main > div {
+    margin: 1em 0;
+    padding: 1em;
+}
+
+#hero-image-container {
+    margin: 0;
+    padding: 0;
+}
+
+#hero-image-container section {
+    padding: .5em;
+    margin: 3rem;
+    height: min-content;
+    width: 13em;
+    position: absolute;
+    z-index: 1;
+    background-color: #3A606E90;
+}
+
+#hero-image-container h2 {
+    text-decoration: underline;
+}
+
+#hero-image-container p {
+    font-size: 1.3em;
+
+}
+
+#hero-image-container img {
+    max-width: 100%;
+    position: relative;
+}
+
+#hero-image-container h3 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    color: white;
+}
+
+#forecast > section {
+    background-color: #aaa;
+    height: 4rem;
+    width: 100%;
+    padding: 0.3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#forecast > section > div {
+    height: inherit;
+    width: 5rem;
+    background-color: #ccc;
+}
+
+#article {
+    height: min-content;
+}
+
+#article > div {
+    width: 10rem;
+    height: 8rem;
+    background-color: #aaa;
+    float: right;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contact > section {
+    padding: 1rem;
+}
+
+#location-map {
+    width: 20rem;
+    aspect-ratio: 16/9;
+    background-color: #aaa;
+    margin: 0 auto;
+}
+
+.social-media-link {
+    height: 2rem;
+    width: 2rem;
     background-color: red;
+    display: inline-block;
 }
 
 
 footer {
     bottom: 0;
-    min-height: 1rem;
-    padding: .5rem;
+    min-height: 5rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: .5em;
 }
