@@ -1,19 +1,13 @@
 @media screen and (max-width: 1400px) {
-    #display {
-        opacity: 0;
-    }
-    #display:focus, li {
-        opacity: 1;
-    }
-
-    nav > ul {
-        flex-direction: column;
-        gap: 1em;
-        min-height: 2em;
-        height: min-content;
-    }
-
-    nav > ul > li:not(#dropdown) {
+    main #hero-image-container #large-id {
         display: none;
+    }
+
+    #hero-image-container #medium-id {
+        display: inline;
+    }
+
+    #gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
