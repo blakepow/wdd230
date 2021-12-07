@@ -17,8 +17,3 @@ for (let i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
-
-// Store
-localStorage.setItem("lastVisited", new Date);
-// Retrieve
-// document.getElementById("last-date").innerHTML = localStorage.getItem("lastVisited");

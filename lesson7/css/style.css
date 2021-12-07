@@ -4,9 +4,9 @@
     margin: 0;
     padding: 0;
     
-    --primary-color: #3A606E;
-    --secondary-color: #607B7D;
-    --tertiary-color: #828E82;
+    --primary-color: #3e8ba7;
+    --secondary-color: #789fa1;
+    --tertiary-color: #608560;
     --body-color: #E0E0E0;
 }
 
@@ -70,7 +70,7 @@ li {
     overflow: hidden;
 }
 li:hover, li a.active {
-    background-color: #AAAE8E;
+    background-color: #6984a7;
     cursor: pointer;
 }
 
@@ -181,13 +181,46 @@ main > div {
     gap: 1em;
 }
 
-#gallery-grid div {
-    box-shadow: 5px 5px 10px 10px #777;
+@media only screen and (min-width: 1400px) {
+    #gallery-grid div {
+        box-shadow: 5px 5px 10px 10px #777;
+    }
 }
 
 #gallery-grid img {
     width: 100%;
     object-fit: cover;
+}
+
+#stormcenter-form {
+    max-width: 30rem;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    padding: 1em;
+    margin: 1em auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#stormcenter-form :is(input, select, textarea) {
+    padding: .25em;
+    border-radius: 5px;
+    border: none;
+
+    resize: none;
+}
+
+#thank-you {
+    max-width: 20rem;
+    background: var(--primary-color);
+    text-align: center;
+    padding: 1em;
+    margin: 1em auto;
+    border-radius: 10px;
 }
 
 footer {
