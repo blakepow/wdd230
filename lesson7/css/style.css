@@ -87,6 +87,12 @@ main > div {
     padding: 1em;
 }
 
+#home-page #hero-image-container img {
+    /* max-height: 30rem;
+    object-fit: cover; */
+    background: url('../images/hero-image.avif');
+}
+
 #hero-image-container {
     margin: 0;
     padding: 0;
@@ -214,13 +220,23 @@ main > div {
     resize: none;
 }
 
-#thank-you {
-    max-width: 20rem;
+#thank-you, #homepage-wireframes {
     background: var(--primary-color);
     text-align: center;
     padding: 1em;
     margin: 1em auto;
     border-radius: 10px;
+}
+
+#thank-you {
+    max-width: 20rem;
+}
+
+#homepage-wireframes {
+    max-width: 80rem;
+}
+#homepage-wireframes img {
+    max-width: 100%;
 }
 
 footer {
