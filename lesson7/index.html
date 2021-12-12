@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./css/medium.css">
     <link rel="stylesheet" href="./css/large.css">
     <script src="./js/app.js" defer></script>
-    <script src="./js/windchill.js" defer></script>
+    <script src="./js/home.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>The Foggy Forecast</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/sun-cloud-icon.svg" />
 </head>
@@ -50,7 +51,6 @@
         </ul>
     </nav>
     <main id='home-page'>
-        <h2>Welcome</h2>
         <div id='hero-image-container'>
             <picture>
                 <source media="(max-width: 1400px)">
@@ -58,27 +58,23 @@
                 <img src="./images/mark-koch-KiRlN3jjVNU-unsplash.jpg" alt="hero banner image">
             </picture>
         </div>
-        <div id='forecast'>
-            <h3>
-                5 Day Forecast
-            </h3>
-            <section>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </section>
-        </div>
-        <div id='article'>
-            <h3>
-                Article
-            </h3>
-            <div></div>
+        <article id='home-info'>
+            <h2>Welcome</h2>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quibusdam sit similique odio debitis laudantium possimus porro quas minus! Magni deleniti hic esse corrupti porro impedit, ipsa ipsum libero fugiat, expedita voluptate dignissimos commodi unde consequatur, magnam minima non autem. Sapiente assumenda non molestiae accusamus voluptas labore sit. Aut eligendi tempore at ab iste accusantium libero neque officia! Magni hic, neque modi aliquam ea, ex error necessitatibus voluptatem tempora iusto ullam natus quod velit totam placeat deserunt id reprehenderit ab eos voluptatum alias molestias voluptas distinctio labore. Nisi dolorem consequuntur nostrum perferendis, aut fugiat, molestias maiores provident minima aliquid illo deserunt incidunt, hic quidem architecto fugit doloremque est sunt. Libero provident at odit amet nisi possimus nulla vel consequatur voluptatum omnis, dicta earum quos ea fugiat. Eius consequuntur vitae quaerat, iusto neque temporibus aut dolorum nulla, id, maiores nam velit ut facere eveniet quia tempora dicta alias! Repellat, consequuntur corporis!
+                Thank you for using the Foggy Forecast. Here you will receive the most up to date information. We gather information from many sources, including our users so you can be safe and updated on all things weather.
             </p>
-        </div>
+        </article>
+        <section id='town-section'>
+            <div id='fish-haven' class='town-card'>
+                <img src="./images/home/fish-haven.jpg" alt="">
+            </div>
+            <div id='preston' class='town-card'>
+                <img src="./images/home/preston.jpg" alt="">
+            </div>
+            <div id='soda-springs' class='town-card'>
+                <img src="./images/home/pond.jpg" alt="">
+            </div>
+        </section>
         <div id='contact'>
             <section>
                 <div id="location-map"></div>
@@ -93,7 +89,7 @@
         </div>
     </main>
     <footer>
-        <p id='copyright'>&copy; The Foggy Forecast</p> <span>|</span> Blake Powelson <span>|</span> <p id='current-date'></p> <span>|</span> <a href="./references.html">Wireframes</a>
+        <p id='copyright'>&copy; The Foggy Forecast</p> <span>|</span> Blake Powelson <span>|</span> <p id='current-date'></p> <span>|</span> <a target="_blank" href="./references.html">Wireframes</a>
     </footer>
 </body>
 </html>

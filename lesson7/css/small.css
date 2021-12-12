@@ -18,6 +18,10 @@
         height: min-content;
     }
 
+    #town-section {
+        flex-direction: column;
+    }
+
     main #hero-image-container #medium-id {
         display: none;
     }

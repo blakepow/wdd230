@@ -11,10 +11,6 @@
 }
 
 body {
-    margin: 0 auto;
-
-    min-width: 100vw;
-
     font-family: 'Ubuntu', sans-serif;
 
     background-color: var(--body-color);
@@ -64,17 +60,17 @@ nav > ul {
 
 }
 
-li {
+nav li {
     border-radius: 5px;
     text-align: center;
     overflow: hidden;
 }
-li:hover, li a.active {
+nav li:hover, li a.active {
     background-color: #6984a7;
     cursor: pointer;
 }
 
-li > a {
+nav li > a {
     font-size: 1.1em;
     height: inherit;
     color: black;
@@ -87,10 +83,57 @@ main > div {
     padding: 1em;
 }
 
+.town-card img {
+    width: 100%;
+    max-height: 15em;
+    object-fit: cover;
+}
+
 #home-page #hero-image-container img {
-    /* max-height: 30rem;
-    object-fit: cover; */
-    background: url('../images/hero-image.avif');
+    max-height: 20rem;
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 12/5;
+    margin-top: 1em;
+}
+
+#town-section {
+    margin: 2rem 3rem;
+    background: var(--primary-color);
+    padding: 1em;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.town-card {
+    border-radius: 10px;
+    background: var(--tertiary-color);
+    width: clamp(10rem, 20rem, 25rem);
+    padding: 1em;
+    text-align: center;
+}
+
+#home-info {
+    text-align: center;
+    background: var(--secondary-color);
+    padding: 1em 5rem;
+    margin: 1em auto;
+    border-radius: 10px;
+    max-width: 50rem;
+}
+
+#home-info h2 {
+    margin-bottom: .5em;
+}
+
+#home-info p {
+    max-width: 70ch;
+    margin: 0 auto;
 }
 
 #hero-image-container {
@@ -106,6 +149,7 @@ main > div {
     position: absolute;
     z-index: 1;
     background-color: #3A606E90;
+    border-radius: 10px;
 }
 
 #hero-image-container h2 {
@@ -129,20 +173,28 @@ main > div {
     color: white;
 }
 
-#forecast > section {
-    background-color: #aaa;
-    height: 4rem;
+#forecast-info {
+    background-color: var(--primary-color);
     width: 100%;
-    padding: 0.3em;
+    padding: 0.5em;
+    border-radius: 10px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
-#forecast > section > div {
-    height: inherit;
-    width: 5rem;
-    background-color: #ccc;
+#forecast-info div {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: .5em;
+    border-radius: 10px;
+}
+
+#forecast-info h3 {
+    text-decoration: underline;
 }
 
 #article {
@@ -187,8 +239,26 @@ main > div {
     gap: 1em;
 }
 
+#gallery-grid section {
+    max-height: 25rem;
+}
+
+#gallery-grid div {
+    height: 10rem;
+}
+
+#gallery-grid p {
+    padding: 1em;
+}
+
+#gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media only screen and (min-width: 1400px) {
-    #gallery-grid div {
+    #gallery-grid section {
         box-shadow: 5px 5px 10px 10px #777;
     }
 }
@@ -247,4 +317,5 @@ footer {
     align-items: center;
     justify-content: center;
     gap: .5em;
+    width: inherit;
 }

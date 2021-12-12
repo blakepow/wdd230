@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/large.css">
     <script src="./js/app.js" defer></script>
     <script src="./js/windchill.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>The Foggy Forecast</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/sun-cloud-icon.svg" />
 </head>
@@ -49,20 +50,17 @@
             </li>
         </ul>
     </nav>
-    <main>
+    <main id='preston-page'>
         <h2>Preston Idaho</h2>
         <div id='hero-image-container'>
             <section>
                 <h2>Weather Summary</h2>
-                <p>Currently: Rainy</p>
-                <p>High: <span id='high-temp'>54</span>˚F</p>
+                <p>Currently: <span id='current'></span></p>
+                <p id='high'>High: <span id='high-temp'></span>˚F</p>
                 <p>Wind Chill: <span id='windchill'></span>˚F</p>
-                <p>Humidity: 95%</p>
-                <p>Wind Speed: <span id='wind-speed'>12</span> mph</p>
+                <p>Humidity: <span id='humidity'></span>%</p>
+                <p>Wind Speed: <span id='wind-speed'></span> mph</p>
             </section>
-            <h3 id='large-id'>Large</h3>
-            <h3 id='medium-id'>Medium</h3>
-            <h3 id='small-id'>Small</h3>
             <picture>
                 <source media="(max-width: 1400px)">
                 <source media="(max-width: 900px)">
@@ -70,15 +68,10 @@
             </picture>
         </div>
         <div id='forecast'>
-            <h3>
+            <h2>
                 5 Day Forecast
-            </h3>
-            <section>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            </h2>
+            <section id='forecast-info'>
             </section>
         </div>
         <div id='article'>
