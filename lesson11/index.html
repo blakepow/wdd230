@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A weather service dedicated to providing you with the best information out there.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/sun-cloud-icon.svg" /><script src="https://kit.fontawesome.com/c8fe637cbf.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js" defer></script>
+    <script src="./js/home.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>The Foggy Forecast</title>
+</head>
+<body>
+    <header>
+        <section>
+            <img src='./images/sun-cloud-icon.svg' alt='main logo' />
+            <div>
+                <h1>The Foggy Forecast</h1>
+                <h4>Clear Reporting on Cloudy Topics</h4>
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul id='nav-list'>
+            <li id="dropdown">
+                Menu
+            </li>
+            <li>
+                <a class='btn active' href='./index.html'>Home</a>
+            </li>
+            <li>
+                <a class='btn' href='./preston.html'>Preston</a>
+            </li>
+            <li>
+                <a class='btn' href='./soda-springs.html'>Soda Springs</a>
+            </li>
+            <li>
+                <a class='btn' href='./fish-haven.html'>Fish Haven</a>
+            </li>
+            <li>
+                <a class='btn' href='./stormcenter.html'>Storm Center</a>
+            </li>
+            <li>
+                <a class='btn' href='./gallery.html'>Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <main id='home-page'>
+        <div id='hero-image-container'>
+            <picture>
+                <source media="(max-width: 1400px)">
+                <source media="(max-width: 900px)">
+                <img src="./images/mark-koch-KiRlN3jjVNU-unsplash.jpg" alt="hero banner image">
+            </picture>
+        </div>
+        <article id='home-info'>
+            <h2>Welcome</h2>
+            <p>
+                Thank you for using the Foggy Forecast. Here you will receive the most up to date information. We gather information from many sources, including our users so you can be safe and updated on all things weather.
+            </p>
+        </article>
+        <section id='town-section'>
+            <div id='fish-haven' class='town-card'>
+                <img src="./images/home/fish-haven.jpg" alt="">
+            </div>
+            <div id='preston' class='town-card'>
+                <img src="./images/home/preston.jpg" alt="">
+            </div>
+            <div id='soda-springs' class='town-card'>
+                <img src="./images/home/pond.jpg" alt="">
+            </div>
+        </section>
+        <div id='contact'>
+            <section>
+                <div id="location-map"></div>
+            </section>
+            <section>
+                <h3>Contact Info</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero minima ducimus consectetur asperiores praesentium possimus vel magnam tenetur tempora voluptates.</p>
+                <div class='social-media-link'><a target="_blank" href="https://facebook.com"><i class="fab fa-facebook"></i></a></div>
+                <div class='social-media-link'><a target="_blank" href="https://instagram.com"><i class="fab fa-instagram"></i></a></div>
+                <div class='social-media-link'><a target="_blank" href="https://twitter.com"><i class="fab fa-twitter"></i></a></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p id='copyright'>&copy; The Foggy Forecast</p> <span>|</span> Blake Powelson <span>|</span> <p id='current-date'></p> <span>|</span> <a target="_blank" href="./references.html">Wireframes</a>
+    </footer>
+</body>
+</html>

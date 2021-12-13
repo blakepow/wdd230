@@ -1,6 +1,6 @@
-async function makeGetRequest() {
+async function makeGetRequest(cityId) {
 
-    let res = await axios.get('https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=610a147366e4ee7efdf2704a9e14c0f1');
+    let res = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=imperial&appid=610a147366e4ee7efdf2704a9e14c0f1`);
 
     let data = res.data.list;
 
@@ -53,5 +53,16 @@ async function makeGetRequest() {
 
 }
 
-makeGetRequest();
+let cityId;
+
+if(document.getElementById('preston-page')){
+    cityId = 5604473;
+} else if (document.getElementById('soda-springs-page')){
+    cityId = 5607916;
+} else if (document.getElementById('fish-haven-page')){
+    cityId = 5585010;
+}
+
+
+makeGetRequest(cityId);
 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A weather service dedicated to providing you with the best information out there.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css"><script src="https://kit.fontawesome.com/c8fe637cbf.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js" defer></script>
+    <script src="./js/windchill.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>The Foggy Forecast</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/sun-cloud-icon.svg" />
+</head>
+<body>
+    <header>
+        <section>
+            <img src='./images/sun-cloud-icon.svg' alt='main logo' />
+            <div>
+                <h1>The Foggy Forecast</h1>
+                <h4>Clear Reporting on Cloudy Topics</h4>
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul id='nav-list'>
+            <li id="dropdown">
+                Menu
+            </li>
+            <li>
+                <a class='btn' href='./index.html'>Home</a>
+            </li>
+            <li>
+                <a class='btn' href='./preston.html'>Preston</a>
+            </li>
+            <li>
+                <a class='btn' href='./soda-springs.html'>Soda Springs</a>
+            </li>
+            <li>
+                <a class='btn active' href='./fish-haven.html'>Fish Haven</a>
+            </li>
+            <li>
+                <a class='btn' href='./stormcenter.html'>Storm Center</a>
+            </li>
+            <li>
+                <a class='btn' href='./gallery.html'>Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <main id='fish-haven-page'>
+        <h2>Fish Haven</h2>
+        <div id='hero-image-container'>
+            <section>
+                <h2>Weather Summary</h2>
+                <p>Currently: <span id='current'></span></p>
+                <p id='high'>High: <span id='high-temp'></span>˚F</p>
+                <p>Wind Chill: <span id='windchill'></span>˚F</p>
+                <p>Humidity: <span id='humidity'></span>%</p>
+                <p>Wind Speed: <span id='wind-speed'></span> mph</p>
+            </section>
+            <picture>
+                <source media="(max-width: 1400px)">
+                <source media="(max-width: 900px)">
+                <img src="./images/wdd230_image_franklinOriginal.avif" alt="hero banner image">
+            </picture>
+        </div>
+        <div id='forecast'>
+            <h2>
+                5 Day Forecast
+            </h2>
+            <section id='forecast-info'>
+            </section>
+        </div>
+        <div id='article'>
+            <h3>
+                Article
+            </h3>
+            <div></div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quibusdam sit similique odio debitis laudantium possimus porro quas minus! Magni deleniti hic esse corrupti porro impedit, ipsa ipsum libero fugiat, expedita voluptate dignissimos commodi unde consequatur, magnam minima non autem. Sapiente assumenda non molestiae accusamus voluptas labore sit. Aut eligendi tempore at ab iste accusantium libero neque officia! Magni hic, neque modi aliquam ea, ex error necessitatibus voluptatem tempora iusto ullam natus quod velit totam placeat deserunt id reprehenderit ab eos voluptatum alias molestias voluptas distinctio labore. Nisi dolorem consequuntur nostrum perferendis, aut fugiat, molestias maiores provident minima aliquid illo deserunt incidunt, hic quidem architecto fugit doloremque est sunt. Libero provident at odit amet nisi possimus nulla vel consequatur voluptatum omnis, dicta earum quos ea fugiat. Eius consequuntur vitae quaerat, iusto neque temporibus aut dolorum nulla, id, maiores nam velit ut facere eveniet quia tempora dicta alias! Repellat, consequuntur corporis!
+            </p>
+        </div>
+        <div id='contact'>
+            <section>
+                <div id="location-map"></div>
+            </section>
+            <section>
+                <h3>Contact Info</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero minima ducimus consectetur asperiores praesentium possimus vel magnam tenetur tempora voluptates.</p>
+                <div class='social-media-link'><a target="_blank" href="https://facebook.com"><i class="fab fa-facebook"></i></a></div>
+                <div class='social-media-link'><a target="_blank" href="https://instagram.com"><i class="fab fa-instagram"></i></a></div>
+                <div class='social-media-link'><a target="_blank" href="https://twitter.com"><i class="fab fa-twitter"></i></a></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p id='copyright'>&copy; The Foggy Forecast</p> <span>|</span> Blake Powelson <span>|</span> <p id='current-date'></p>
+    </footer>
+</body>
+</html>

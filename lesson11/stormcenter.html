@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The storm center page of the weather app">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <script src="./js/app.js" defer></script>
+    <script src="./js/stormcenter-form.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/sun-cloud-icon.svg" />
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <section>
+            <img src='./images/sun-cloud-icon.svg' alt='main logo' />
+            <div>
+                <h1>The Foggy Forecast</h1>
+                <h4>Clear Reporting on Cloudy Topics</h4>
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul id='nav-list'>
+            <li id="dropdown">
+                Menu
+            </li>
+            <li>
+                <a class='btn' href='./index.html'>Home</a>
+            </li>
+            <li>
+                <a class='btn' href='./preston.html'>Preston</a>
+            </li>
+            <li>
+                <a class='btn' href='#'>Soda Springs</a>
+            </li>
+            <li>
+                <a class='btn' href='#'>Fish Haven</a>
+            </li>
+            <li>
+                <a class='btn active' href='./stormcenter.html'>Storm Center</a>
+            </li>
+            <li>
+                <a class='btn' href='./gallery.html'>Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <form name='myForm' id='stormcenter-form'>
+            <label for="fullname">Full Name: <input type="text" name='fullname' placeholder="Full Name" minlength="5" pattern='(?=.*[a-z])(?=.*[A-Z]).{5,}' ></label>
+            <label for="email">Email: <input type="text" name='email' placeholder="example@email.com" required></label>
+            <label for="phone">Phone: <input type="tel" name='phone' placeholder="Phone Number" required></label>
+            <label for="date">Storm Date: <input type="date" name='date' placeholder="Storm Date" required></label>
+            <label for="storm-type">
+                Storm Type: <input list='storm-type' placeholder="Storm Type">
+                <datalist id='storm-type'>
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                </datalist>
+            </label>
+            <label for="severity">Storm Severity:<br><input type="range" name='severity' min='0' max='10'></label>
+            <label for="location">Region: 
+                <select name="location">
+                    <option value="Select Region" disabled>Select Region...</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                </select>
+            </label>
+            In Danger Level:
+            <label for="yes">Yes <input type="radio" name='danger' value='yes' id='yes'></label>
+            <label for="maybe">Maybe <input type="radio" name='danger' value='maybe' id='maybe'></label>
+            <label for="no">No <input type="radio" name='danger' value='no' id='no'></label>
+            <label for="details"><textarea name="details" id="details" cols="30" rows="10" placeholder="Additional Details..." ></textarea></label>
+
+            <input type="submit">
+        </form>
+    </main>
+    <footer>
+        <p id='copyright'>&copy; The Foggy Forecast</p> <span>|</span> Blake Powelson <span>|</span> <p id='current-date'></p>
+    </footer>
+</body>
+</html>

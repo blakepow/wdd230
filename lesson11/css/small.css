@@ -1,0 +1,46 @@
+@media screen and (max-width: 900px) {
+    ul #dropdown {
+        display: inline;
+    }
+
+    li {
+        display: none;
+    }
+    
+    .show li {
+        display: block;
+    }
+
+    nav > ul {
+        flex-direction: column;
+        gap: 1em;
+        min-height: 2em;
+        height: min-content;
+    }
+
+    #town-section {
+        flex-direction: column;
+    }
+
+    main #hero-image-container #medium-id {
+        display: none;
+    }
+
+    #hero-image-container #small-id {
+        display: inline;
+        float: right;
+    }
+
+    main #gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: .5rem;
+    }
+
+    footer span {
+        display: none;
+    }
+}

@@ -6,7 +6,7 @@
     
     --primary-color: #3e8ba7;
     --secondary-color: #789fa1;
-    --tertiary-color: #608560;
+    --tertiary-color: #4ca7a7;
     --body-color: #E0E0E0;
 }
 
@@ -225,10 +225,15 @@ main > div {
 }
 
 .social-media-link {
-    height: 2rem;
-    width: 2rem;
-    background-color: red;
+    height: min-content;
+    width: min-content;
     display: inline-block;
+    margin: 1em .3em;
+}
+
+i {
+    font-size: 2em;
+    color: var(--primary-color);
 }
 
 #gallery-grid {
