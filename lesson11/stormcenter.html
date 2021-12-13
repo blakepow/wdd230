@@ -51,19 +51,19 @@
     </nav>
     <main>
         <form name='myForm' id='stormcenter-form'>
-            <label for="fullname">Full Name: <input type="text" name='fullname' placeholder="Full Name" minlength="5" pattern='(?=.*[a-z])(?=.*[A-Z]).{5,}' ></label>
-            <label for="email">Email: <input type="text" name='email' placeholder="example@email.com" required></label>
-            <label for="phone">Phone: <input type="tel" name='phone' placeholder="Phone Number" required></label>
-            <label for="date">Storm Date: <input type="date" name='date' placeholder="Storm Date" required></label>
+            <label for="fullname">Full Name: <input type="text" id='fullname' name='fullname' placeholder="Full Name" minlength="5" pattern='(?=.*[a-z])(?=.*[A-Z]).{5,}' ></label>
+            <label for="email">Email: <input type="text" id='email' name='email' placeholder="example@email.com" required></label>
+            <label for="phone">Phone: <input type="tel" id='phone' name='phone' placeholder="Phone Number" required></label>
+            <label for="date">Storm Date: <input type="date" id='date' name='date' placeholder="Storm Date" required></label>
             <label for="storm-type">
-                Storm Type: <input list='storm-type' placeholder="Storm Type">
+                Storm Type: <input list='storm-type' id='storm-type' placeholder="Storm Type">
                 <datalist id='storm-type'>
                     <option value="Flash Flood">
                     <option value="Hail">
                     <option value="Hurricane">
                 </datalist>
             </label>
-            <label for="severity">Storm Severity:<br><input type="range" name='severity' min='0' max='10'></label>
+            <label for="severity">Storm Severity:<br><input type="range" id='severity' name='severity' min='0' max='10'></label>
             <label for="location">Region: 
                 <select name="location">
                     <option value="Select Region" disabled>Select Region...</option>
@@ -73,9 +73,9 @@
                 </select>
             </label>
             In Danger Level:
-            <label for="yes">Yes <input type="radio" name='danger' value='yes' id='yes'></label>
-            <label for="maybe">Maybe <input type="radio" name='danger' value='maybe' id='maybe'></label>
-            <label for="no">No <input type="radio" name='danger' value='no' id='no'></label>
+            <label for="yes">Yes <input type="radio" id='yes' name='danger' value='yes' id='yes'></label>
+            <label for="maybe">Maybe <input type="radio" id='maybe' name='danger' value='maybe' id='maybe'></label>
+            <label for="no">No <input type="radio" id='no' name='danger' value='no' id='no'></label>
             <label for="details"><textarea name="details" id="details" cols="30" rows="10" placeholder="Additional Details..." ></textarea></label>
 
             <input type="submit">
