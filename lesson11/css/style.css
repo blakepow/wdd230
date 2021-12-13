@@ -65,8 +65,11 @@ nav li {
     text-align: center;
     overflow: hidden;
 }
-nav li:hover, li a.active {
+nav li:hover:not(#dropdown), li a.active {
     background-color: #6984a7;
+    cursor: pointer;
+}
+#dropdown:hover {
     cursor: pointer;
 }
 
@@ -95,6 +98,13 @@ main > div {
     width: 100%;
     aspect-ratio: 12/5;
     margin-top: 1em;
+}
+
+#hero-image-container img {
+    max-height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    /* aspect-ratio: 16/5; */
 }
 
 #town-section {
@@ -139,13 +149,14 @@ main > div {
 #hero-image-container {
     margin: 0;
     padding: 0;
+    color: whitesmoke;
 }
 
 #hero-image-container section {
     padding: .5em;
     margin: 3rem;
     height: min-content;
-    width: 13em;
+    width: 14em;
     position: absolute;
     z-index: 1;
     background-color: #3A606E90;
@@ -197,38 +208,77 @@ main > div {
     text-decoration: underline;
 }
 
+.events {
+    max-width: 30rem;
+    background: var(--tertiary-color);
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.events h3 {
+    text-decoration: underline;
+}
+
+.events div {
+    margin-top: 1em;
+}
+
+
 #article {
-    height: min-content;
+    background: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+
+    border-radius: 10px;
+}
+
+#article article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #article > div {
-    width: 10rem;
-    height: 8rem;
-    background-color: #aaa;
-    float: right;
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+#article img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 #contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
-#contact > section {
+#contact :is(section, article) {
     padding: 1rem;
 }
 
-#location-map {
-    width: 20rem;
-    aspect-ratio: 16/9;
-    background-color: #aaa;
-    margin: 0 auto;
+#contact article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+#contact p i {
+    font-size: 1.4em;
 }
 
-.social-media-link {
-    height: min-content;
-    width: min-content;
-    display: inline-block;
-    margin: 1em .3em;
+#location-map {
+    max-width: 40rem;
+    aspect-ratio: 16/9;
+    margin: 0 auto;
+}
+#location-map img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 i {
@@ -323,4 +373,8 @@ footer {
     justify-content: center;
     gap: .5em;
     width: inherit;
+}
+
+footer a {
+    color: white;
 }

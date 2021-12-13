@@ -8,12 +8,12 @@ async function makeGetRequest(cityId) {
 
     const currentWeather = data[0].main;
 
-    const highTemp = Math.ceil(currentWeather.temp_max);
+    const highTemp = currentWeather.temp_max;
     document.getElementById('high-temp').innerText = highTemp;
 
     document.getElementById('humidity').innerText = currentWeather.humidity;
     
-    document.getElementById('wind-speed').innerText = Math.ceil(data[0].wind.speed);
+    document.getElementById('wind-speed').innerText = data[0].wind.speed;
 
     let getWindchill = function(temperature, windspeed) {
         if (temperature <= 50 && windspeed > 3) {
@@ -37,14 +37,14 @@ async function makeGetRequest(cityId) {
     const days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
         
     data.map((day, index) => {
-        if(index % 8 == 0){
+        if((index - 3) % 8 == 0){
             document.getElementById('forecast-info').innerHTML += (
                 `
                 <div>
-                    <h3>${days[index/8]}</h3>
+                    <h3>${days[(index - 3)/8]}</h3>
                     <p>${day.weather[0].main}</p>
                     <img src='https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png' />
-                    <p>${Math.ceil(day.main.temp)}˚F</p>
+                    <p>${day.main.temp}˚F</p>
                 </div>
                 `
             )

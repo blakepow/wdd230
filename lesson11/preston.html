@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/large.css"><script src="https://kit.fontawesome.com/c8fe637cbf.js" crossorigin="anonymous"></script>
     <script src="./js/app.js" defer></script>
     <script src="./js/windchill.js" defer></script>
+    <script src="./js/events.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>The Foggy Forecast</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/sun-cloud-icon.svg" />
@@ -21,7 +22,7 @@
             <img src='./images/sun-cloud-icon.svg' alt='main logo' />
             <div>
                 <h1>The Foggy Forecast</h1>
-                <h4>Clear Reporting on Cloudy Topics</h4>
+                <h5>Clear Reporting on Cloudy Topics</h4>
             </div>
         </section>
     </header>
@@ -75,25 +76,39 @@
             </section>
         </div>
         <div id='article'>
-            <h3>
-                Article
-            </h3>
-            <div></div>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quibusdam sit similique odio debitis laudantium possimus porro quas minus! Magni deleniti hic esse corrupti porro impedit, ipsa ipsum libero fugiat, expedita voluptate dignissimos commodi unde consequatur, magnam minima non autem. Sapiente assumenda non molestiae accusamus voluptas labore sit. Aut eligendi tempore at ab iste accusantium libero neque officia! Magni hic, neque modi aliquam ea, ex error necessitatibus voluptatem tempora iusto ullam natus quod velit totam placeat deserunt id reprehenderit ab eos voluptatum alias molestias voluptas distinctio labore. Nisi dolorem consequuntur nostrum perferendis, aut fugiat, molestias maiores provident minima aliquid illo deserunt incidunt, hic quidem architecto fugit doloremque est sunt. Libero provident at odit amet nisi possimus nulla vel consequatur voluptatum omnis, dicta earum quos ea fugiat. Eius consequuntur vitae quaerat, iusto neque temporibus aut dolorum nulla, id, maiores nam velit ut facere eveniet quia tempora dicta alias! Repellat, consequuntur corporis!
-            </p>
+            <article>
+                <h3>
+                    Preston Idaho Eagle Scout
+                </h3>
+                <p>
+                    On Saturday, November 6, 2021 Ben Ward was awarded his Eagle at an outdoor ceremony at the local Oxford park.
+                    
+                    Ben started attending scouts when the Wards lived in Malad.
+                    
+                    “Malad has some incredible scout leaders who really care about <a href="https://www.hjnews.com/preston/eagle-scout-dedicates-project-to-local-historian-wwii-veteran/article_c33d1827-4895-532e-bca4-42e8070daa23.html" target="_blank">...continue reading</a>
+                </p>
+                <p>By Teresa Chipman, Citizen Sports Writer</p>
+            </article>
+            <div><img src="./images/scouts.jpg" alt=""></div>
+        </div>
+        <div id='preston-events' class='events'>
+            <h3>Upcoming Events</h3>
         </div>
         <div id='contact'>
             <section>
-                <div id="location-map"></div>
+                <div id="location-map"><img src="./images/nasa.jpg" alt="World View"></div>
             </section>
-            <section>
+            <article>
                 <h3>Contact Info</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero minima ducimus consectetur asperiores praesentium possimus vel magnam tenetur tempora voluptates.</p>
-                <div class='social-media-link'><a target="_blank" href="https://facebook.com"><i class="fab fa-facebook"></i></a></div>
-                <div class='social-media-link'><a target="_blank" href="https://instagram.com"><i class="fab fa-instagram"></i></a></div>
-                <div class='social-media-link'><a target="_blank" href="https://twitter.com"><i class="fab fa-twitter"></i></a></div>
-            </section>
+                <p><i class="fas fa-map-pin"></i> 30 N 1st E Preston, ID 83263</p>
+                <p><i class="fas fa-phone-alt"></i> (000)000-0000</p>
+                <p><i class="fas fa-envelope"></i> foggyforecast@abc.com</p>
+                <div id="social-media-links">
+                    <a target="_blank" href="https://facebook.com" rel='noopener'><i class="fab fa-facebook"></i></a>
+                    <a target="_blank" href="https://instagram.com" rel='noopener'><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://twitter.com" rel='noopener'><i class="fab fa-twitter"></i></a>
+                </div>
+            </article>
         </div>
     </main>
     <footer>
