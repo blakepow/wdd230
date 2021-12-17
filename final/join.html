@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Application to join Rexburg City of Commerce">
+    <link rel="stylesheet" href="https://use.typekit.net/nai0fcw.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <script src="https://kit.fontawesome.com/c8fe637cbf.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js" defer></script>
+    <script src="./js/join.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Rexburg Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="./images/logo.svg" alt="">
+            <div>
+                <h1>Rexburg Chamber of Commerce</h1>
+                <h3>Discover Your Love For This Town</h3>
+            </div>
+        </section>
+        <nav>
+            <button class='dropdown-opener' onclick="navToggle()">Menu</button>
+            <ul id='main-navbar'>
+                <li class='nav-links'><a href="./">Home</a></li>
+                <li class='nav-links'><a href="./rexburg.html">Rexburg</a></li>
+                <li class='nav-links'><a href="./directory.html">Directory</a></li>
+                <li class='nav-links active'><a href="./join.html">Join</a></li>
+                <li class='nav-links'><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form name='joinForm' id='join-form'>
+            <fieldset>
+                <legend><h3>Personal</h3></legend>
+                <label for="firstname">First Name: <input type="text" id="firstname" required></label>
+                <label for="lastname">Last Name: <input type="text" id="lastname" required></label>
+                <label for="suffix">Title: <input type="text" id="suffix"></label>
+                <label for="email">Email: <input type="text" id="email" required></label>
+                <label for="cellphone">Phone: <input type="text" id="cellphone"></label>
+            </fieldset>
+            <fieldset>
+                <legend><h3>Business</h3></legend>
+                <label for="business-name">Business Name: <input type="text" id="business-name" required></label>
+                <label for="business-address">Business Address: <input type="text" id="business-address"></label>
+                <label for="business-website">Business Website: <input type="text" id="business-website"></label>
+                <label for="business-description">Business Description: <textarea name="business-description" id="business-description" cols="30" rows="10"></textarea></label>
+                
+                <label class='join-radios' id='nonprofit-radio' for="non-profit"><i class="fas fa-info-circle"></i> Non-profit: <input class="join-form-radio" type="radio" id="non-profit" name='membership'></label>
+                <label class='join-radios' id='bronze-radio' for="bronze"><i class="fas fa-info-circle"></i> Bronze: <input class="join-form-radio" type="radio" id="bronze" name='membership'></label>
+                <label class='join-radios' id='silver-radio' for="silver"><i class="fas fa-info-circle"></i> Silver: <input class="join-form-radio" type="radio" id="silver" name='membership'></label>
+                <label class='join-radios' id='gold-radio' for="gold"><i class="fas fa-info-circle"></i> Gold: <input class="join-form-radio" type="radio" id="gold" name='membership'></label>
+                
+                <div id='nonprofit-info'>hello</div>
+                <div id='bronze-info'>hello</div>
+                <div id='silver-info'>hello</div>
+                <div id='gold-info'>hello</div>
+
+            </fieldset>
+            <input type="submit" value="Send Request" id='join-form-submit'>
+        </form>
+    </main>
+    <footer>
+        <p id='copyright'>&copy; Rexburg Chamber of Commerce</p> <span>|</span> Blake Powelson <span>|</span> <p id='current-date'></p>
+    </footer>
+</body>
+</html>

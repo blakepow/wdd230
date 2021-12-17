@@ -1,0 +1,34 @@
+@media only screen and (max-width: 600px) {
+    #main-navbar {
+        flex-direction: column;
+        align-items: center;
+        margin-top: .6em;
+
+        display: none;
+    }
+
+    #main-navbar.open {
+        display: flex;
+    }
+
+    nav li {
+        text-align: center;
+        max-width: min-content;
+    }
+    .dropdown-opener {
+        display: inline;
+    }
+
+    #map-info {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer span {
+        display: none;
+    }
+}

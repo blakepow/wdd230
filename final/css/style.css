@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: new-order, sans-serif;
+
+    --primary-color: #817F75;
+    --secondary-color: #FF6B6B;
+    --tertiary-color: #292F36;
+    --primary-accent: #4ECDC4;
+    --secondary-accent: #FFE66D;
+}
+
+body :is(h1, h2, h3) {
+    font-family: bely-display, sans-serif;
+}
+body :is(h4, h5, h6) {
+    font-family: contralto-big, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+header section {
+    padding: 1em;
+    max-width: 80rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 1em;    
+}
+
+header h1 {
+    display: inline;
+}
+
+header img {
+    max-width: 7rem;
+    
+}
+
+nav {
+    background-color: var(--tertiary-color);
+    text-align: center;
+    padding: 1em;
+}
+
+#main-navbar {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    list-style: none;
+    max-width: 80rem;
+    margin: 0 auto;
+    font-size: 1.3em;
+}
+
+.nav-links {
+    padding: .5em;
+    border-radius: 10px;
+}
+.nav-links:not(.dropdown-opener):hover, .nav-links:not(.dropdown-opener).active {
+    background-color: var(--secondary-color);
+}
+
+.nav-links a {
+    color: white;
+}
+
+.dropdown-opener {
+    display: none;
+    font-size: 1.3em;
+    border: none;
+    background-color: var(--tertiary-color);
+    color: white;
+}
+
+#current-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+#main-page fieldset {
+    max-width: 60rem;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#forecast > * {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#forecast-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#forecast h3, #forecast-info > div {
+    text-align: center;
+}
+
+
+
+form {
+    max-width: 50rem;
+    margin: 1em auto;
+
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1em;
+    border-radius: 5px;
+}
+
+form label {
+    /* width: 100%; */
+    font-size: 1.3em;
+}
+
+form input {
+    padding: .2em;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+form :is(input:not(.join-form-radio), textarea) {
+    display: block;
+    resize: none;
+}
+
+#join-form-submit, #contact-form-submit {
+    margin: 1em auto;
+}
+
+#join-form-submit:hover, #contact-form-submit:hover {
+    cursor: pointer;
+}
+
+#nonprofit-info {
+    display: none;
+    position: absolute;
+    padding: 1em;
+    background-color: #292F36;
+    color: white;
+    border-radius: 10px;
+    bottom: -510px;
+}
+#nonprofit-radio:hover ~ #nonprofit-info {
+    display: block;
+}
+#bronze-info {
+    display: none;
+    position: absolute;
+    padding: 1em;
+    background-color: #292F36;
+    color: white;
+    border-radius: 10px;
+    bottom: -550px;
+}
+#bronze-radio:hover ~ #bronze-info {
+    display: block;
+}
+#silver-info {
+    display: none;
+    position: absolute;
+    padding: 1em;
+    background-color: #292F36;
+    color: white;
+    border-radius: 10px;
+    bottom: -590px;
+}
+#silver-radio:hover ~ #silver-info {
+    display: block;
+}
+#gold-info {
+    display: none;
+    position: absolute;
+    padding: 1em;
+    background-color: #292F36;
+    color: white;
+    border-radius: 10px;
+    bottom: -630px;
+}
+#gold-radio:hover ~ #gold-info {
+    display: block;
+}
+
+#map-info {
+    max-width: 60rem;
+    margin: 1em auto;
+
+}
+
+#map-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+
+    padding: 1em;
+    background-color: var(--tertiary-color);
+    color: white;
+    border-radius: 10px;
+}
+
+iframe {
+    margin: 0 auto;
+}
+
+#map-info article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+#social-media-links a {
+    font-size: 2em;
+    color: var(--primary-accent);
+    margin: 0 .5em;
+}
+
+footer {
+    bottom: 0;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer span {
+    margin: 0 1em;
+}

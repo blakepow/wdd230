@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Rexburg Chamber of Commerce">
+    <link rel="stylesheet" href="https://use.typekit.net/nai0fcw.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <script src="https://kit.fontawesome.com/c8fe637cbf.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Rexburg Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="./images/logo.svg" alt="logo">
+            <div>
+                <h1>Rexburg Chamber of Commerce</h1>
+                <h3>Discover Your Love For This Town</h3>
+            </div>
+        </section>
+        <nav>
+            <button class='dropdown-opener' onclick="navToggle()">Menu</button>
+            <ul id='main-navbar'>
+                <li class='nav-links'><a href="./">Home</a></li>
+                <li class='nav-links'><a href="./rexburg.html">Rexburg</a></li>
+                <li class='nav-links'><a href="./directory.html">Directory</a></li>
+                <li class='nav-links'><a href="./join.html">Join</a></li>
+                <li class='nav-links active'><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form name='contactForm' id='contact-form'>
+            <fieldset>
+                <legend><h3>Contact Us</h3></legend>
+                <label for="fullname">Full Name:<input type="text" name="" id="fullname"></label>
+                <label for="phone">Phone:<input type="text" name="phone" id="phone"></label>
+                <label for="email">Email:<input type="text" name="" id="email"></label>
+                <label for="contact-details">Details:<textarea name="" id="contact-details" cols="30" rows="10"></textarea></label>
+                <label for="contact-form-submit"><input type="submit" value="Send Message" name="" id="contact-form-submit"></label>
+            </fieldset>
+        </form>
+        <section id='map-info'>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.851101781!2d-111.823202256796!3d43.83010702220133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1639483089391!5m2!1sen!2sus" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <article>
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-pin"></i> 30 N 1st E Preston, ID 83263</p>
+                <p><i class="fas fa-phone-alt"></i> (000)000-0000</p>
+                <p><i class="fas fa-envelope"></i> foggyforecast@abc.com</p>
+                <div id="social-media-links">
+                    <a target="_blank" href="https://facebook.com" rel='noopener'><i class="fab fa-facebook"></i></a>
+                    <a target="_blank" href="https://instagram.com" rel='noopener'><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://twitter.com" rel='noopener'><i class="fab fa-twitter"></i></a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p id='copyright'>&copy; Rexburg Chamber of Commerce</p> <span>|</span> Blake Powelson <span>|</span> <p id='current-date'></p>
+    </footer>
+</body>
+</html>

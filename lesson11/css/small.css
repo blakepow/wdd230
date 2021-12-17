@@ -35,6 +35,15 @@
         grid-template-columns: 1fr;
     }
 
+    #article {
+        grid-template-columns: none;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    #article div {
+        margin: 0 auto;
+    }
+
     footer {
         flex-direction: column;
         padding: .5rem;
