@@ -37,11 +37,23 @@ header section {
 
 header h1 {
     display: inline;
+    font-size: 2em;
 }
 
-header img {
+header section img {
     max-width: 7rem;
-    
+}
+
+.hero-image-container {
+    max-width: 80rem;
+    height: 20rem;
+    margin: 1rem auto;
+}
+
+.hero-image-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
 }
 
 nav {
@@ -90,30 +102,175 @@ nav {
     font-size: 1.2em;
 }
 
-#main-page fieldset {
+#main-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+#main-info > div {
+    border-radius: 10px;
+    padding: 1em;
+}
+
+#weather {
     max-width: 60rem;
     margin: 1em auto;
     padding: 1em;
     border-radius: 10px;
+    background-color: var(--tertiary-color);
+    color: white;
 
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
+#weather h2, #weather h3 {
+    text-align: center;
+    margin: 1em;
+}
 
-#forecast > * {
-    border: 1px solid black;
-    border-radius: 10px;
+#weather article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #forecast-info {
+    gap: .5em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #forecast h3, #forecast-info > div {
     text-align: center;
+}
+
+.weather-card {
+    border-radius: 10px;
+    background-color: var(--primary-accent);
+    padding: .5em;
+}
+
+
+#ads-parent {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1rem auto;
+    max-width: 60rem;
+
+}
+
+#ads-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+#ads-container h2 {
+    text-align: center;
+    margin: 1em;
+}
+
+.ads {
+    background-color: var(--primary-accent);
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1em;
+    max-width: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.ads img {
+    max-width: 10rem;
+    margin: 0 auto;
+}
+
+#about-us, #events {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#about-us h2 {
+    text-align: center;
+}
+
+#about-us img {
+    max-width: 10rem;
+    float: right;
+}
+
+#about-us p {
+    display: inline;
+}
+
+#events {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+
+}
+
+#events div {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+
+    background-color: var(--tertiary-color);
+    color: white;
+}
+
+#ads-container a {
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin: 1em;
+}
+
+#about-page article {
+    max-width: 60rem;
+    margin: 1em auto;
+    border-radius: 10px;
+    padding: 1em;
+
+}
+
+#about-page h3 {
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#about-page p {
+    font-size: 1.4em;
+}
+
+#welcome {
+    background-color: var(--tertiary-color);
+    color: white;
+}
+
+#history {
+    background-color: var(--primary-accent);
 }
 
 
@@ -124,15 +281,18 @@ form {
 
 }
 
-form fieldset {
+form section {
     display: flex;
     flex-direction: column;
     gap: 1em;
     align-items: center;
     justify-content: center;
+    background-color: var(--tertiary-color);
+    color: white;
 
     padding: 1em;
     border-radius: 5px;
+    margin: 1em;
 }
 
 form label {
@@ -153,59 +313,46 @@ form :is(input:not(.join-form-radio), textarea) {
 
 #join-form-submit, #contact-form-submit {
     margin: 1em auto;
+    background-color: var(--primary-accent);
 }
 
 #join-form-submit:hover, #contact-form-submit:hover {
     cursor: pointer;
 }
 
-#nonprofit-info {
-    display: none;
+#tier-info {
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
+    z-index: 2;
     padding: 1em;
-    background-color: #292F36;
+    background-color: var(--secondary-color);
     color: white;
     border-radius: 10px;
-    bottom: -510px;
 }
-#nonprofit-radio:hover ~ #nonprofit-info {
-    display: block;
+#tier-info.active {
+    pointer-events: all;
+    opacity: 1;
 }
-#bronze-info {
-    display: none;
-    position: absolute;
-    padding: 1em;
-    background-color: #292F36;
-    color: white;
-    border-radius: 10px;
-    bottom: -550px;
+
+#backdrop {
+    background-color: #000;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
 }
-#bronze-radio:hover ~ #bronze-info {
-    display: block;
+#backdrop.active {
+    opacity: .5;
+    pointer-events: all;
 }
-#silver-info {
-    display: none;
-    position: absolute;
-    padding: 1em;
-    background-color: #292F36;
-    color: white;
-    border-radius: 10px;
-    bottom: -590px;
-}
-#silver-radio:hover ~ #silver-info {
-    display: block;
-}
-#gold-info {
-    display: none;
-    position: absolute;
-    padding: 1em;
-    background-color: #292F36;
-    color: white;
-    border-radius: 10px;
-    bottom: -630px;
-}
-#gold-radio:hover ~ #gold-info {
-    display: block;
+
+#contact-page form section {
+    background-color: var(--secondary-color);
 }
 
 #map-info {
@@ -251,6 +398,7 @@ footer {
     background-color: var(--primary-color);
     color: white;
     padding: 1em;
+    margin-top: 1em;
 
     display: flex;
     flex-direction: row;

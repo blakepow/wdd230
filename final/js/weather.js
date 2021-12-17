@@ -40,7 +40,7 @@ async function makeGetRequest(cityId) {
         if((index - 3) % 8 == 0){
             document.getElementById('forecast-info').innerHTML += (
                 `
-                <div>
+                <div class='weather-card'>
                     <h3>${day.dt_txt.slice(5, 10)}</h3>
                     <p>${day.weather[0].main}</p>
                     <img src='https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png' />

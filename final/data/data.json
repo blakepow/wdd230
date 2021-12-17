@@ -1,7 +1,46 @@
 {
-    "data" : [
+    "businesses" : [
         {
-            
+            "name": "BarberPop Shop",
+            "description": "Fresh Cuts and Gormet Sodas",
+            "website": "www.barberpopshop.com",
+            "logo": "https://static.wixstatic.com/media/f64187_0c3ffd59685545d1b4909bbd76457bc6~mv2.png/v1/fill/w_320,h_320,al_c,q_85,usm_0.66_1.00_0.01/BARBERPOP%20SHOP%20LOGO%20white.webp"
+        },
+        {
+            "name": "Crumbl Cookies",
+            "description": "Need cookies like… now? You never know when you’ll have a crumbl craving, so we make it easy to order cookies any way you want.",
+            "website": "www.crumblcookies.com",
+            "logo": "https://crumblcookies.com/images/crumbl.svg"
+        },
+        {
+            "name": "Casa de Ochoa",
+            "description": "Taste of Mexico",
+            "website": "www.casadeochoa.com",
+            "logo": "https://static.wixstatic.com/media/0163c6_1c419357759c486d90b9f3934d86d086~mv2.png/v1/fill/w_1186,h_755,al_c,q_90,usm_0.66_1.00_0.01/CASA%20DE%20OCHOA%20(1)-09.webp"
+        },
+        {
+            "name": "Teton Lakes Legacy Golf",
+            "description": "This 27-hole facility is owned and operated by the City of Rexburg and is a tale of three nines",
+            "website": "www.tetonlakesgc.com",
+            "logo": "https://tetonlakesgc.com/wp-content/uploads/2016/03/Both-Logos-01-e1457138581788.png"
+        },
+        {
+            "name": "Alpine Jewelers",
+            "description": "Celebrate you and your partner’s unique love story with another one-of-a-kind pairing: your engagement ring setting and diamond. Let Alpine Jewelers help you take the first step towards a beautiful life together.",
+            "website": "www.alpinejewelers.com",
+            "logo": "https://www.alpinejewelers.com/images/logo.png"
+        },
+        {
+            "name": "Freeman Clothing",
+            "description": "Sounds cliche, but your style really is unique to you. We have guys who like conservative navy suits, and guys who like bright colored suits, or loud patterns.",
+            "website": "www.freemanclothing.com",
+            "logo": "https://cdn.shopify.com/s/files/1/0043/6404/2310/files/logo_2x_754a5cb5-5bcb-4058-963d-971351d376e5_500x.png?v=1609641240"
+        },
+        {
+            "name": "Gravity Factory",
+            "description": "WE HAVE 5 FUN PARTY ROOMS DEDICATED TO MAKING YOUR BIRTHDAY, EVENT, OR GATHERING A TIME TO REMEMBER.",
+            "website": "www.gravityfactory.net",
+            "logo": "https://www.gravityfactory.net/wp-content/themes/jump/graphics/gravity-factory-logo.png"
         }
     ]
 }

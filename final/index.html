@@ -36,15 +36,52 @@
         </nav>
     </header>
     <main id='main-page'>
-        <fieldset>
-            <legend><h2>Weather</h2></legend>
-            <div id='current-weather'>
-                <p>Currently: <span id='current'></span></p>
-                <p id='high'>High: <span id='high-temp'></span>˚F</p>
-                <p>Wind Chill: <span id='windchill'></span>˚F</p>
-                <p>Humidity: <span id='humidity'></span>%</p>
-                <p>Wind Speed: <span id='wind-speed'></span> mph</p>
+        <div class="hero-image-container">
+            <img src="./images/tetons2.webp" alt="Grand Tetons">
+        </div>
+
+        <section id='main-info'>
+            <div id="about-us">
+                <h2>About Us</h2>
+                <img src="https://www.rexburg.org/sites/default/files/styles/full_node_primary/public/imageattachments/community/page/7891/17.png?itok=1biOtMCH" alt="About Rexburg">
+                <p>The Rexburg Area Chamber of Commerce is here to promote your business, educate you on business topics, and to be your advocate. By centering your business on the community, you access a whole network that will help your company to grow and prosper. Rexburg is a quickly growing community with much potential. Join the Rexburg Area Chamber of Commerce today to be a part of this historic growth and prosperity.
+                    Ready to take your business to the next level? Join the Chamber to connect to the Rexburg community and local business owners and professionals.
+                    <br>
+                    <br>
+                    Ready to take your business to the next level? Join the Chamber to connect to the Rexburg community and local business owners and professionals.
+                </p>
             </div>
+            <div id="events">
+                <h2>Events</h2>
+                <div>
+                    <h3>"A Christmas Carol"</h3>
+                    <h4>Rexburg Community Theater</h4>
+                    <p>Saturday, December 18, 2021 - 7:00pm</p>
+                </div>
+                <div>
+                    <h3>Classical Christmas Movie</h3>
+                    <h4>"It's a Wonderful Life"</h4>
+                    <p>Free showing at the Romance Theater at 7pm</p>
+                </div>
+                <div>
+                    <h3>Luminara Display at Rexburg Tabernacle</h3>
+                    <h4>"It's a Wonderful Life"</h4>
+                    <p>Free showing at the Romance Theater at 7pm</p>
+                </div>
+            </div>
+        </section>
+
+        <section id='weather'>
+            <article>
+                <h2>Weather</h2>
+                <div id='current-weather'>
+                    <p>Currently: <span id='current'></span></p>
+                    <p id='high'>High: <span id='high-temp'></span>˚F</p>
+                    <p>Wind Chill: <span id='windchill'></span>˚F</p>
+                    <p>Humidity: <span id='humidity'></span>%</p>
+                    <p>Wind Speed: <span id='wind-speed'></span> mph</p>
+                </div>
+            </article>
             <div id='forecast'>
                 <h3>
                     5 Day Forecast
@@ -52,7 +89,27 @@
                 <section id='forecast-info'>
                 </section>
             </div>
-        </fieldset>
+        </section>
+
+        <section id="ads-parent">
+            <h2>Advertisements</h2>
+            <div id="ads-container"></div>
+        </section>
+
+        <section id='map-info'>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.851101781!2d-111.823202256796!3d43.83010702220133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1639483089391!5m2!1sen!2sus" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <article>
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-pin"></i> 30 N 1st E Rexburg, ID 83440</p>
+                <p><i class="fas fa-phone-alt"></i> (000)000-0000</p>
+                <p><i class="fas fa-envelope"></i> rexburgcoc@abc.com</p>
+                <div id="social-media-links">
+                    <a target="_blank" href="https://facebook.com" rel='noopener'><i class="fab fa-facebook"></i></a>
+                    <a target="_blank" href="https://instagram.com" rel='noopener'><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://twitter.com" rel='noopener'><i class="fab fa-twitter"></i></a>
+                </div>
+            </article>
+        </section>
     </main>
     <footer>
         <p id='copyright'>&copy; Rexburg Chamber of Commerce</p> <span>|</span> Blake Powelson <span>|</span> <p id='current-date'></p>
