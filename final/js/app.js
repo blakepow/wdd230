@@ -108,3 +108,11 @@ if (document.getElementById('join-page')) {
         displayDesc(goldDesc)
     })
 }
+
+if(document.getElementById('directory')) {
+    const toggleView = document.getElementById('view-toggle');
+
+    toggleView.addEventListener('click', () => {
+        document.getElementById('ads-container').classList.toggle('rows');
+    })
+}
