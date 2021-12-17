@@ -10,7 +10,7 @@ document.getElementById("current-date").innerHTML = date.toLocaleString('default
 
 if(document.getElementById('main-page') || document.getElementById('directory')){
     const businessRequest = async (loopLimit) => {
-        const res =  await axios.get('../data/data.json');
+        const res =  await axios.get('https://raw.githubusercontent.com/blakepow/wdd230/master/final/data/data.json');
         const data = res.data.businesses;
     
         data.map((business, index) => {
